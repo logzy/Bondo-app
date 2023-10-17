@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Bondo.WebAPI.props" />
+</Project>

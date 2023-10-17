@@ -1,0 +1,209 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Application/Bondo.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Application/Bondo.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Application/Bondo.Application.csproj",
+        "projectName": "Bondo.Application",
+        "projectPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Application/Bondo.Application.csproj",
+        "packagesPath": "/Users/ololadeenifeni/.nuget/packages/",
+        "outputPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ololadeenifeni/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj": {
+                "projectPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj"
+              },
+              "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/Bondo.Shared.csproj": {
+                "projectPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/Bondo.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj",
+        "projectName": "Bondo.Domain",
+        "projectPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj",
+        "packagesPath": "/Users/ololadeenifeni/.nuget/packages/",
+        "outputPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ololadeenifeni/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/Bondo.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/Bondo.Shared.csproj",
+        "projectName": "Bondo.Shared",
+        "projectPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/Bondo.Shared.csproj",
+        "packagesPath": "/Users/ololadeenifeni/.nuget/packages/",
+        "outputPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ololadeenifeni/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
