@@ -34,13 +34,11 @@
     <Folder Include="DTOs\" />
     <Folder Include="Extensions\" />
     <Folder Include="Features\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Common\Mappings\" />
     <Folder Include="Common\Exceptions\" />
     <Folder Include="DTOs\Email\" />
     <Folder Include="Features\Users\" />
     <Folder Include="Features\Posts\" />
-    <Folder Include="Interfaces\Repositories\" />
     <Folder Include="Features\Subscription\" />
   </ItemGroup>
   <ItemGroup>

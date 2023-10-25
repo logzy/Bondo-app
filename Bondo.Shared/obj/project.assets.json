@@ -8,25 +8,30 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/ololadeenifeni/.nuget/packages/": {}
+    "C:\\Users\\Abdullahi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/Bondo.Shared.csproj",
+      "projectUniqueName": "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Shared\\Bondo.Shared.csproj",
       "projectName": "Bondo.Shared",
-      "projectPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/Bondo.Shared.csproj",
-      "packagesPath": "/Users/ololadeenifeni/.nuget/packages/",
-      "outputPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/obj/",
+      "projectPath": "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Shared\\Bondo.Shared.csproj",
+      "packagesPath": "C:\\Users\\Abdullahi\\.nuget\\packages\\",
+      "outputPath": "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Shared\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/ololadeenifeni/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Abdullahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

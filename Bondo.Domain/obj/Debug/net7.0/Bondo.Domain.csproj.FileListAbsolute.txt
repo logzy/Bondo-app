@@ -22,3 +22,15 @@ C:/Users/oeai/source/repos/BondoApp/Bondo-app/Bondo.Domain/obj/Debug/net7.0/ref/
 /Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/obj/Debug/net7.0/refint/Bondo.Domain.dll
 /Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/obj/Debug/net7.0/Bondo.Domain.pdb
 /Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/obj/Debug/net7.0/ref/Bondo.Domain.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\bin\Debug\net7.0\Bondo.Domain.deps.json
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\bin\Debug\net7.0\Bondo.Domain.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\bin\Debug\net7.0\Bondo.Domain.pdb
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\Bondo.Domain.csproj.AssemblyReference.cache
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\Bondo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\Bondo.Domain.AssemblyInfoInputs.cache
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\Bondo.Domain.AssemblyInfo.cs
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\Bondo.Domain.csproj.CoreCompileInputs.cache
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\Bondo.Domain.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\refint\Bondo.Domain.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\Bondo.Domain.pdb
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Domain\obj\Debug\net7.0\ref\Bondo.Domain.dll

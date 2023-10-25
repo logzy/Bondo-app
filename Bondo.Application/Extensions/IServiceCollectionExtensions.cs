@@ -2,6 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using FluentValidation;
+using Bondo.Application.Interfaces;
+using Bondo.Domain.Common.Interfaces;
+using Bondo.Domain.Common;
 
 namespace Bondo.Application.Extensions
 {
@@ -12,6 +15,7 @@ namespace Bondo.Application.Extensions
             services.AddAutoMapper();
             services.AddMediator();
             services.AddValidators();
+            services.AddServices();
         }
 
         private static void AddAutoMapper(this IServiceCollection services)
@@ -27,6 +31,10 @@ namespace Bondo.Application.Extensions
         private static void AddValidators(this IServiceCollection services)
         {
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        }
+        private static void AddServices(this IServiceCollection services)
+        {
+            services.AddScoped<IDomainEventDispatcher, DomainEventDispatcher>();
         }
     }
 }

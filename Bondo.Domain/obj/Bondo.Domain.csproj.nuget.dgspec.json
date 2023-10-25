@@ -1,26 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj": {}
+    "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Domain\\Bondo.Domain.csproj": {}
   },
   "projects": {
-    "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj": {
+    "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Domain\\Bondo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj",
+        "projectUniqueName": "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Domain\\Bondo.Domain.csproj",
         "projectName": "Bondo.Domain",
-        "projectPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/Bondo.Domain.csproj",
-        "packagesPath": "/Users/ololadeenifeni/.nuget/packages/",
-        "outputPath": "/Users/ololadeenifeni/Projects/Bondo-app/Bondo.Domain/obj/",
+        "projectPath": "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Domain\\Bondo.Domain.csproj",
+        "packagesPath": "C:\\Users\\Abdullahi\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/ololadeenifeni/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Abdullahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +46,14 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
             }
           },
           "imports": [
@@ -60,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
