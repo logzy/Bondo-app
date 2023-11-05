@@ -1,10 +1,13 @@
 ﻿using Bondo.Application.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bondo.WebAPI;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
 public class UsersController : ControllerBase
 {
     private readonly IUserService _userService;
@@ -17,14 +20,20 @@ public class UsersController : ControllerBase
     public async Task<IActionResult> GetCurrentUser()
     {
         var response = await _userService.GetCurrentUser(User);
-        return StatusCode(StatusCodes.Status200OK, response);
+        if(response.Succeeded)
+            return StatusCode(StatusCodes.Status200OK, response);
+        else
+            return StatusCode(StatusCodes.Status404NotFound, response);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(string id)
     {
         var response = await _userService.GetUserById(id);
-        return StatusCode(StatusCodes.Status200OK, response);
+        if(response.Succeeded)
+            return StatusCode(StatusCodes.Status200OK, response);
+        else
+            return StatusCode(StatusCodes.Status404NotFound, response);
     }
     
     [HttpGet("all")]

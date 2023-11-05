@@ -1,5 +1,8 @@
-﻿namespace Bondo.Application;
-public class GetUserDto
+﻿using Bondo.Application.Common.Mappings;
+using Bondo.Domain.Entities;
+
+namespace Bondo.Application;
+public class GetUserDto : IMapFrom<ApplicationUser>
 {
     public string Id { get; set; }
     public string? FirstName { get; set; }

@@ -30,6 +30,10 @@ public class UserService : IUserService
     }
     public async Task<Result<GetUserDto>> GetCurrentUser(ClaimsPrincipal principal)
     {
+        foreach (var claim in principal.Claims)
+        {
+           Console.WriteLine(claim.Value); 
+        }
         var user = await _userManager.GetUserAsync(principal);
         if(user != null){
             var userDto = _mapper.Map<GetUserDto>(user);
@@ -60,8 +64,9 @@ public class UserService : IUserService
         var user = await _userManager.FindByNameAsync(loginRequest.UserName);
         if(user == null)
             return Result<GetUserDto>.Failure("Username of password invalid");
-        var signinResult = await _signInManager.PasswordSignInAsync(user, loginRequest.Password,loginRequest.RememberMe, false);
-        if(signinResult.Succeeded){
+        // var signinResult = await _signInManager.PasswordSignInAsync(user, loginRequest.Password,loginRequest.RememberMe, false);
+        var passwordCheck = await _userManager.CheckPasswordAsync(user, loginRequest.Password);
+        if(passwordCheck){
             GetUserDto userDto = _mapper.Map<GetUserDto>(user);
             return Result<GetUserDto>.Success(userDto);
         }

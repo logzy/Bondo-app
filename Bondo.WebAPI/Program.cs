@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Bondo.Application.Extensions;
 using Bondo.Persistence.Extensions;
 using Bondo.Infrastructure.Extensions;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,27 @@ builder.Services.AddInfrastructureLayer();
 builder.Services.AddPersistenceLayer(builder.Configuration);
 
 // Auth Config
+builder.Services.AddCors(options =>
+  options.AddPolicy("Dev", builder =>
+  {
+    // Allow multiple methods
+    builder.WithMethods("GET", "POST", "PATCH", "DELETE", "OPTIONS")
+      .WithHeaders(
+        HeaderNames.Accept,
+        HeaderNames.ContentType,
+        HeaderNames.Authorization)
+      .AllowCredentials()
+      .SetIsOriginAllowed(origin =>
+      {
+        if (string.IsNullOrWhiteSpace(origin)) return false;
+        // For testing with localhost, **remove this line in production!**
+        if (origin.ToLower().StartsWith("http://localhost")) return true;
+        // production domain.
+        if (origin.ToLower().StartsWith("https://bondo.com")) return true;
+        return false;
+      });
+  })
+);
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
   .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
   {
@@ -50,9 +72,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-// automapper
-builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
