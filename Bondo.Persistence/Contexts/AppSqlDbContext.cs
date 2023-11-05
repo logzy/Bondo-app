@@ -4,9 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Bondo.Domain.Common.Interfaces;
 using System.Reflection;
 using Bondo.Domain.Common;
+using Bondo.Domain.Entities;
 
 namespace Bondo.Persistence.Contexts;
-public class AppSqlDbContext : IdentityDbContext<IdentityUser, IdentityRole, string>
+public class AppSqlDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
 {
      private readonly IDomainEventDispatcher _dispatcher;
  

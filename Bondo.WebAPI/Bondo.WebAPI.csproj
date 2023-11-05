@@ -21,6 +21,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bondo.Persistence\Bondo.Persistence.csproj" />
+    <ProjectReference Include="..\Bondo.Application\Bondo.Application.csproj" />
+    <ProjectReference Include="..\Bondo.Infrastructure\Bondo.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

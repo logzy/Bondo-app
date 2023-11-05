@@ -22,3 +22,15 @@ C:/Users/oeai/source/repos/BondoApp/Bondo-app/Bondo.Shared/obj/Debug/net7.0/ref/
 /Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/obj/Debug/net7.0/refint/Bondo.Shared.dll
 /Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/obj/Debug/net7.0/Bondo.Shared.pdb
 /Users/ololadeenifeni/Projects/Bondo-app/Bondo.Shared/obj/Debug/net7.0/ref/Bondo.Shared.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\bin\Debug\net7.0\Bondo.Shared.deps.json
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\bin\Debug\net7.0\Bondo.Shared.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\bin\Debug\net7.0\Bondo.Shared.pdb
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\Bondo.Shared.csproj.AssemblyReference.cache
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\Bondo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\Bondo.Shared.AssemblyInfoInputs.cache
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\Bondo.Shared.AssemblyInfo.cs
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\Bondo.Shared.csproj.CoreCompileInputs.cache
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\Bondo.Shared.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\refint\Bondo.Shared.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\Bondo.Shared.pdb
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Shared\obj\Debug\net7.0\ref\Bondo.Shared.dll

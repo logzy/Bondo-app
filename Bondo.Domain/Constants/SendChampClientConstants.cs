@@ -8,4 +8,5 @@ public static class SendChampClientConstants
     public const string NUMERIC_TOKEN = "numeric";
     public const string SENDER = "Bondo";
     public const int TOKEN_LENGTH = 4;
+    public const int EXPIRATION_TIME = 15;
 }

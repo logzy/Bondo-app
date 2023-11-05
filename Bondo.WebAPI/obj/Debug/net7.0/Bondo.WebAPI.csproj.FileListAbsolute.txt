@@ -156,3 +156,14 @@ D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Microsoft.EntityFr
 D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\System.CodeDom.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\AutoMapper.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\FluentValidation.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Bondo.Application.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Bondo.Shared.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Bondo.Application.pdb
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Bondo.Shared.pdb
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Bondo.Infrastructure.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.WebAPI\bin\Debug\net7.0\Bondo.Infrastructure.pdb

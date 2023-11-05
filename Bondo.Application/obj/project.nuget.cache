@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "TXoqWhApf9RhpzoBnXQKbX8EngVEpeT/NsgKjsMUl6rgesUWEJlQ0RuREAqN+tLwIJoceLYoy2WRhWcVZIu7OA==",
-  "success": false,
+  "dgSpecHash": "/CTKIPXhcZq6BCvAAV5txcZ9HgI14cL3gjbS7K4bEi6++LGQiP95032TeIF08/xSqOYFMu+WP1KVK/AYtUhfTg==",
+  "success": true,
   "projectFilePath": "D:\\Desktop\\work\\Bondo\\Bondo-app\\Bondo.Application\\Bondo.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abdullahi\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
@@ -29,9 +29,9 @@
     "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.13\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.13.nupkg.sha512",
     "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
-    "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.12\\microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
-    "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.12\\microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",
+    "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
+    "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
+    "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
     "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.13\\microsoft.entityframeworkcore.relational.7.0.13.nupkg.sha512",
     "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Abdullahi\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
@@ -60,15 +60,5 @@
     "C:\\Users\\Abdullahi\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
     "C:\\Users\\Abdullahi\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.13 to 7.0.12. Reference the package directly from the project to select a different version. \r\n Bondo.Application -> Bondo.Domain -> Microsoft.AspNetCore.Identity.EntityFrameworkCore 7.0.13 -> Microsoft.EntityFrameworkCore.Relational 7.0.13 -> Microsoft.EntityFrameworkCore (>= 7.0.13) \r\n Bondo.Application -> Microsoft.EntityFrameworkCore (>= 7.0.12)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

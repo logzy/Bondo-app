@@ -39,3 +39,7 @@ D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\obj\Debug\net7.0\Bondo.Persist
 D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\obj\Debug\net7.0\ref\Bondo.Persistence.dll
 D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\bin\Debug\net7.0\Bondo.Persistence.runtimeconfig.json
 D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\obj\Debug\net7.0\Bondo.Persistence.genruntimeconfig.cache
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\bin\Debug\net7.0\Bondo.Application.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\bin\Debug\net7.0\Bondo.Shared.dll
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\bin\Debug\net7.0\Bondo.Application.pdb
+D:\Desktop\work\Bondo\Bondo-app\Bondo.Persistence\bin\Debug\net7.0\Bondo.Shared.pdb

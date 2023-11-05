@@ -24,9 +24,7 @@
     <None Remove="Repositories\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Bondo.Domain\Bondo.Domain.csproj" />
+    <ProjectReference Include="..\Bondo.Application\Bondo.Application.csproj" />
   </ItemGroup>
 </Project>
