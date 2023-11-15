@@ -3,7 +3,7 @@ using Bondo.Domain.Entities;
 using Bondo.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 
-namespace Bondo.Persistence;
+namespace Bondo.Persistence.Repositories;
 public class UserRepository : IUserRepository
 {
         protected readonly AppSqlDbContext _context;
