@@ -10,6 +10,11 @@ public class ContractEnums
         Crypto = 1
     }
     public enum ContractStatus{
+        InActive = 0,
+        Active = 1,
+        Deleeted = 2
+    }
+    public enum ApplicationStatus{
         Pending = 0,
         Accepted = 1,
         Rejected = 2

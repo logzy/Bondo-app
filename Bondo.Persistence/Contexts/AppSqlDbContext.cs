@@ -24,6 +24,7 @@ public class AppSqlDbContext : IdentityDbContext<ApplicationUser, ApplicationRol
     }
 
     public DbSet<Contract> Contracts { get; set; }
+    public DbSet<ContractApplication> ContractApplications { get; set; }
  
    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
