@@ -12,7 +12,7 @@ public class ContractEnums
     public enum ContractStatus{
         InActive = 0,
         Active = 1,
-        Deleeted = 2
+        Deleted = 2
     }
     public enum ApplicationStatus{
         Pending = 0,

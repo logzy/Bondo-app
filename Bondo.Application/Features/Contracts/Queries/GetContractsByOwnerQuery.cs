@@ -5,7 +5,7 @@ using Bondo.Shared;
 using MediatR;
 
 namespace Bondo.Application;
-public record class GetContractsByOwnerQuery : IRequest<Result<ContractDto>>
+public record class GetContractsByOwnerQuery : IRequest<Result<List<ContractDto>>>
 {
     public string OwnerId { get; set; }
 
@@ -20,7 +20,7 @@ public record class GetContractsByOwnerQuery : IRequest<Result<ContractDto>>
     }
 }
 
-internal class GetContractsByOwnerQueryHandler : IRequestHandler<GetContractsByOwnerQuery, Result<ContractDto>>
+internal class GetContractsByOwnerQueryHandler : IRequestHandler<GetContractsByOwnerQuery, Result<List<ContractDto>>>
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
@@ -34,10 +34,10 @@ internal class GetContractsByOwnerQueryHandler : IRequestHandler<GetContractsByO
         _contractRepository = contractRepository;
     }
 
-    public async Task<Result<ContractDto>> Handle(GetContractsByOwnerQuery query, CancellationToken cancellationToken)
+    public async Task<Result<List<ContractDto>>> Handle(GetContractsByOwnerQuery query, CancellationToken cancellationToken)
     {
         var entity = await _contractRepository.GetContractsByOwnerAsync(query.OwnerId);
-        var Contract = _mapper.Map<ContractDto>(entity);
-        return await Result<ContractDto>.SuccessAsync(Contract);
+        var Contract = _mapper.Map<List<ContractDto>>(entity);
+        return await Result<List<ContractDto>>.SuccessAsync(Contract);
     }
 }

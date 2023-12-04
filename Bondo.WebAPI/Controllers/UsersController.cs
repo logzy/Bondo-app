@@ -36,7 +36,7 @@ public class UsersController : ControllerBase
             return StatusCode(StatusCodes.Status404NotFound, response);
     }
     
-    [HttpGet("all")]
+    [HttpGet("All")]
     public async Task<IActionResult> GetAll()
     {
         var response = await _userService.GetUsers();
