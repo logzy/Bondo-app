@@ -35,7 +35,11 @@ internal class GetContractApplicationByIdQueryHandler : IRequestHandler<GetContr
     public async Task<Result<ContractApplicationDto>> Handle(GetContractApplicationByIdQuery query, CancellationToken cancellationToken)
     {
         var entity = await _unitOfWork.Repository<ContractApplication>().GetByIdAsync(query.Id);
-        var Contract = _mapper.Map<ContractApplicationDto>(entity);
-        return await Result<ContractApplicationDto>.SuccessAsync(Contract);
+        if(entity == null)
+            return await Result<ContractApplicationDto>.FailureAsync("Contract Application not found!");
+
+        
+        var contract = _mapper.Map<ContractApplicationDto>(entity);
+        return await Result<ContractApplicationDto>.SuccessAsync(contract);
     }
 }

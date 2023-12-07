@@ -16,5 +16,6 @@ public static class IServiceCollectionExtensions
     {
         services.AddScoped<IOtpService, OtpService>();
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IContractService, ContractService>();
     }
 }

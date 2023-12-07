@@ -43,7 +43,7 @@ public class ContractController : ControllerBase
             return StatusCode(StatusCodes.Status404NotFound, response);
     }
 
-    [HttpGet("{ownerId}")]
+    [HttpGet("owner/{ownerId}")]
     public async Task<IActionResult> GetContractByOwner(string ownerId)
     {
         var response = await _contractService.GetContractsByOwner(ownerId);
@@ -53,7 +53,7 @@ public class ContractController : ControllerBase
             return StatusCode(StatusCodes.Status404NotFound, response);
     }
 
-    [HttpGet("{contractorId}")]
+    [HttpGet("contractor/{contractorId}")]
     public async Task<IActionResult> GetContractByContractor(string contractorId)
     {
         var response = await _contractService.GetContractsByContractor(contractorId);
@@ -63,7 +63,7 @@ public class ContractController : ControllerBase
             return StatusCode(StatusCodes.Status404NotFound, response);
     }
     
-    [HttpGet("Create")]
+    [HttpPost("Create")]
     public async Task<IActionResult> CreateContract([FromBody] CreateContractRequestModel requestModel)
     {
         var user = await _userService.GetCurrentUser(User);
@@ -74,7 +74,7 @@ public class ContractController : ControllerBase
             return StatusCode(StatusCodes.Status404NotFound, response);
     }
     
-    [HttpGet("Update")]
+    [HttpPost("Update")]
     public async Task<IActionResult> UpdateContract([FromBody] UpdateContractRequestModel requestModel)
     {
         var user = await _userService.GetCurrentUser(User);
@@ -85,18 +85,18 @@ public class ContractController : ControllerBase
             return StatusCode(StatusCodes.Status404NotFound, response);
     }
 
-    [HttpGet("Apply")]
-    public async Task<IActionResult> ApplyToContract([FromBody] CreateContractRequestModel requestModel)
+    [HttpPost("Apply")]
+    public async Task<IActionResult> ApplyToContract([FromBody] ContractApplicationRequestModel requestModel)
     {
         var user = await _userService.GetCurrentUser(User);
-        var response = await _contractService.CreateContract(requestModel, user.Data.Id);
+        var response = await _contractService.ApplyToContract(requestModel, user.Data.Id);
         if(response.Succeeded)
             return StatusCode(StatusCodes.Status200OK, response);
         else
             return StatusCode(StatusCodes.Status404NotFound, response);
     }
     
-    [HttpGet("{contractId}/Status/{status}")]
+    [HttpPost("{contractId}/Status/{status}")]
     public async Task<IActionResult> ChangeStatus(int contractId, int status)
     {
         // var user = await _userService.GetCurrentUser(User);
