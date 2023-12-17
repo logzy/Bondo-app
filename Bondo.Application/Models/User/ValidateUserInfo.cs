@@ -1,21 +1,22 @@
 ﻿using System.Text.RegularExpressions;
 using Bondo.Shared;
-namespace Bondo.Application;
-public class ValidateUserInfo
+
+namespace Bondo.Application
 {
-    public bool ValidEmail { get; set; } = true;
+    public class ValidateUserInfo
+    {
+        public bool ValidEmail { get; set; } = true;
         public bool ValidPhone { get; set; } = true;
         public bool ValidPassword { get; set; } = true;
         public bool ValidName { get; set; } = true;
 
-        public bool State { get {
+        public bool State => ValidEmail && ValidPhone && ValidPassword && ValidName;
 
-                return ValidEmail && ValidPhone && ValidPassword && ValidName;
-            } }
         public string Errors { get; set; }
+
         public ValidateUserInfo IsValidEmail(string email)
         {
-            Regex regex = new Regex("/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6})*$/");
+            Regex regex = new Regex(@"^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$");
             if (!regex.Match(email).Success)
             {
                 ValidEmail = false;
@@ -26,7 +27,7 @@ public class ValidateUserInfo
 
         public ValidateUserInfo IsValidPhone(string phone)
         {
-            Regex regex = new Regex("/^(?:(?:\\(?(?:00|\\+)([1-4]\\d\\d|[1-9]\\d?)\\)?)?[\\-\\.\\ \\\\\\/]?)?((?:\\(?\\d{1,}\\)?[\\-\\.\\ \\\\\\/]?){0,})(?:[\\-\\.\\ \\\\\\/]?(?:#|ext\\.?|extension|x)[\\-\\.\\ \\\\\\/]?(\\d+))?$/");
+            Regex regex = new Regex(@"^(?:(?:\+|00)([1-9]\d{0,3}))?[-.\s]?\(?(?:(\d{1,})\)?[-.\s]?)?((?:\d{1,}[-.\s]?){0,})(?:[-.\s]?(?:#|ext\.?|extension|x)[-.\s]?(?:(\d+)))?$");
 
             if (!regex.Match(phone).Success)
             {
@@ -38,31 +39,31 @@ public class ValidateUserInfo
 
         public ValidateUserInfo IsValidPassword(string password)
         {
-            Regex regex = new Regex("/(?=(.*[0-9]))(?=.*[\\!@#$%^&*()\\\\[\\]{}\\-_+=~`|:;\"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/ \r\n");
+            Regex regex = new Regex(@"^(?=.*[0-9])(?=.*[!@#$%^&*()[\]{}\-_+=~`|:;""'<>,./?])(?=.*[a-z])(?=.*[A-Z]).{8,}$");
 
             if (!regex.Match(password).Success)
-            { 
+            {
                 ValidPassword = false;
                 Errors += $"Invalid Password\n";
             }
             return this;
         }
+
         public ValidateUserInfo IsValidName(string name)
         {
-            Regex regex = new Regex("/^[a-zA-Z-]*$/");
+            Regex regex = new Regex(@"^[a-zA-Z-]*$");
 
             if (!regex.Match(name).Success)
             {
-                ValidPassword = false;
+                ValidName = false;
                 Errors += $"Invalid Name format\n";
             }
             return this;
         }
 
-
         public ValidationResult Result()
         {
-            //bool modelIsValid = ValidEmail && ValidPhone && ValidPassword;
-            return new ValidationResult(this.State, this.Errors);
+            return new ValidationResult(State, Errors);
         }
+    }
 }
