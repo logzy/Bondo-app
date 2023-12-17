@@ -78,6 +78,10 @@ public class UserService : IUserService
 
     public async Task<Result<GetUserDto>> RegisterAccount(RegisterRequestModel registerAccount)
     {
+        var validation = registerAccount.Validate();
+        if(!validation.Success){
+            return Result<GetUserDto>.Failure(validation.Errors);
+        }
         ApplicationUser user = new ApplicationUser{
             FirstName = registerAccount.FirstName,
             LastName = registerAccount.LastName,
