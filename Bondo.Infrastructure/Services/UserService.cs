@@ -82,6 +82,7 @@ public class UserService : IUserService
             FirstName = registerAccount.FirstName,
             LastName = registerAccount.LastName,
             Email = registerAccount.Email,
+            PhoneNumber = registerAccount.PhoneNumber,
             EmailConfirmed = true,
             PhoneNumberConfirmed = true,
             UserName = registerAccount.Email
