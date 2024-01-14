@@ -38,6 +38,7 @@
     <Folder Include="Features\Users\" />
     <Folder Include="Features\Posts\" />
     <Folder Include="Features\Subscription\" />
+    <Folder Include="Features\Wallets\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bondo.Domain\Bondo.Domain.csproj" />

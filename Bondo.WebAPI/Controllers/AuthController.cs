@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using Bondo.Application;
 using Bondo.Application.Interfaces;
+using Bondo.Application.Models.User;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;

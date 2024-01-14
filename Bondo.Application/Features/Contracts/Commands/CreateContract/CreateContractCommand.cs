@@ -40,6 +40,7 @@ internal class CreateContractCommandHandler : IRequestHandler<CreateContractComm
             OwnerUserId = command.OwnerUserId,
             ContractorUserId = command.ContractorUserId,
             Title = command.Title,
+            ContractValue = command.ContractValue,
             DeliveryDate = command.DeliveryDate,
             Description = command.Description,
             Visibility = command.Visibility,

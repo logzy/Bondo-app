@@ -1,4 +1,5 @@
 ﻿using Bondo.Application.Interfaces;
+using Bondo.Application.Models.User;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -41,5 +42,73 @@ public class UsersController : ControllerBase
     {
         var response = await _userService.GetUsers();
         return StatusCode(StatusCodes.Status200OK, response);
+    }
+
+    [HttpPost("Pin/Create")]
+    public async Task<IActionResult> CreatePin([FromBody] CreatePinRequestModel createPinRequest)
+    {
+        var user = await _userService.GetCurrentUser(User);
+        if(!user.Succeeded)
+            return StatusCode(StatusCodes.Status404NotFound, user);
+        
+        var response = await _userService.CreatepPin(createPinRequest, user.Data.Id);
+        if (response.Succeeded)
+            return Ok(response);
+        else return BadRequest(response);
+    }
+
+    [HttpPost("Pin/Reset")]
+    public async Task<IActionResult> ResetPin([FromBody] ResetPinRequestModel resetPinRequest)
+    {
+        var user = await _userService.GetCurrentUser(User);
+        if(!user.Succeeded)
+            return StatusCode(StatusCodes.Status404NotFound, user);
+        
+        var response = await _userService.ResetPin(resetPinRequest, user.Data.Id);
+        if (response.Succeeded)
+            return Ok(response);
+        else return BadRequest(response);
+    }
+
+    [HttpPost("ForgotPassword")]
+    [AllowAnonymous]
+    public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequestModel forgotPasswordRequest)
+    {
+        // var user = await _userService.GetCurrentUser(User);
+        // if(!user.Succeeded)
+        //     return StatusCode(StatusCodes.Status404NotFound, user);
+        string origin = Request.Headers.ContainsKey("Origin") ? Request.Headers["Origin"].FirstOrDefault() : "https://bondo.com";
+        
+        var response = await _userService.RequestPasswordReset(forgotPasswordRequest, origin);
+        if (response.Succeeded)
+            return Ok(response);
+        else return BadRequest(response);
+    }
+    
+    [HttpPost("ResetPassword")]
+    [AllowAnonymous]
+    public async Task<IActionResult> ResetPassword([FromBody] PasswordResetRequestModel passwordResetRequestModel)
+    {
+        // var user = await _userService.GetCurrentUser(User);
+        // if(!user.Succeeded)
+        //     return StatusCode(StatusCodes.Status404NotFound, user);
+        
+        var response = await _userService.ResetPassword(passwordResetRequestModel);
+        if (response.Succeeded)
+            return Ok(response);
+        else return BadRequest(response);
+    }
+
+    [HttpPost("Update")]
+    public async Task<IActionResult> UpdateProfile([FromBody] UpdateProfileRequestModel profileRequestModel)
+    {
+        var user = await _userService.GetCurrentUser(User);
+        if(!user.Succeeded)
+            return StatusCode(StatusCodes.Status404NotFound, user);
+        
+        var response = await _userService.UpdateAccount(profileRequestModel, user.Data.Id);
+        if (response.Succeeded)
+            return Ok(response);
+        else return BadRequest(response);
     }
 }

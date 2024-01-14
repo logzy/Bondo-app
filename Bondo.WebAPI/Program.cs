@@ -6,6 +6,7 @@ using Bondo.Application.Extensions;
 using Bondo.Persistence.Extensions;
 using Bondo.Infrastructure.Extensions;
 using Microsoft.Net.Http.Headers;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,7 +38,7 @@ builder.Services.AddCors(options =>
         if (origin.ToLower().StartsWith("http://localhost")) return true;
         // production domain.
         if (origin.ToLower().StartsWith("https://bondo.com")) return true;
-        return false;
+        return true;
       });
   })
 );
@@ -66,7 +67,8 @@ builder.Services.AddIdentity<ApplicationUser, ApplicationRole>
         options.Password.RequireUppercase = false;
         options.Password.RequireLowercase = false;
     })
-    .AddEntityFrameworkStores<AppSqlDbContext>();
+    .AddEntityFrameworkStores<AppSqlDbContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -81,7 +83,7 @@ var app = builder.Build();
     app.UseSwagger();
     app.UseSwaggerUI();
 //}
-
+app.UseCors("Dev");
 app.UseHttpsRedirection();
 
 app.UseCookiePolicy(

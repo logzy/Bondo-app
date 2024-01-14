@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Bondo.Application;
+namespace Bondo.Application.Models.User;
 public class LoginRequestModel
 {
     [Required]

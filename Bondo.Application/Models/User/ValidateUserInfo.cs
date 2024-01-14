@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Bondo.Shared;
 
-namespace Bondo.Application
+namespace Bondo.Application.Models.User
 {
     public class ValidateUserInfo
     {
